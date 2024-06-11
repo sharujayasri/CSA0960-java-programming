@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Skip {
+    public static void main(String[] args) {
+        int m, n, k;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the m value: ");
+        m = scanner.nextInt();
+
+        System.out.print("Enter the n value: ");
+        n = scanner.nextInt();
+
+        System.out.print("Enter the k value: ");
+        k = scanner.nextInt();
+
+        
+        for (int i = m; i <= n; i += k + 1) {
+            System.out.print(i + " ");
+        }
+
+        scanner.close();
+    }
+}
