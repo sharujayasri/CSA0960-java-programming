@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class statistics
+{
+    public static void main(String[]args)
+{
+    int num1,num2;
+    Scanner Scanner =new Scanner(System.in);
+    System.out.print("Enter the number:");
+    num1=Scanner.nextInt();
+    System.out.print("Enter the number:");
+    num2=Scanner.nextInt();
+    int GCD = CalculateGCD(num1,num2);
+    int LCM = CalculateLCM(num1,num2,GCD);
+    System.out.print("the GCD of two number is:"+GCD);
+    System.out.print("The LCM of two number:"+LCM);
+}
+    public static int CalculateGCD(int a,int b)
+    {
+        while(b!=0)
+        {
+            int temp=b;
+            b=a % b;
+            a=temp;
+        }
+            return a;
+        
+    }
+    public static int CalculateLCM(int a,int b, int GCD)
+    {
+    return Math.abs(a*b)/GCD;
+}
+}
+            
+            
+            
+            
+            
+            
+            
+            
+    
