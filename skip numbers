@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class skipnumbers
+{
+    public static void main(String[]args)
+    {
+        int m,n,k;
+        Scanner Scanner=new Scanner(System.in);
+        System.out.print("Enter the m value:");
+        m=Scanner.nextInt();
+        System.out.print("Enter the n value:");
+        n=Scanner.nextInt();
+        System.out.print("Enter the k value:");
+        k=Scanner.nextInt();
+        for(int i=m;i<n;i=i+k)
+        {
+            System.out.print(i+ " ");
+        }
+        
+    }
+}
