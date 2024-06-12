@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class composite
+{
+    public static void main(String[]args)
+    {
+        int a,b;
+        Scanner Scanner = new Scanner(System.in);
+        System.out.print("Eneter the start :");
+        a = Scanner.nextInt();
+        System.out.print("Enter the end range:");
+        b = Scanner.nextInt();
+        System.out.print("the composite of two numbers are:");
+        for(int i=a; i<=b;i++)
+        {
+            if(isComposite(i))
+            {
+                System.out.print(i+ " ");
+            }
+        }
+    }
+        public static boolean isComposite(int num)
+        {
+            if(num<=1)
+            {
+                return false;
+            }
+        
+        for(int i=2 ; i<=Math.sqrt(num);i++)
+        {
+            if(num % i == 0)
+            {
+                return true;
+                
+            }
+        }
+            return false;
+        }
+            }
+
