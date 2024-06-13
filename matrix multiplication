@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class multiplication
+{
+    public static void main(String[]args)
+    {
+        Scanner Scanner= new Scanner(System.in);
+        System.out.print("Enter the number of rows and cols :");
+        int rows1=Scanner.nextInt();
+        int cols1=Scanner.nextInt();
+        System.out.print("enter the cols:");
+        int cols2=Scanner.nextInt();
+        
+        int[][] matrix1=new int[rows1][cols1];
+        int[][] matrix2=new int[cols1][cols2];
+        int[][]result=new int[rows1][cols2];
+        
+        System.out.print("enter the matrix1:");
+        for(int i=0;i<rows1;i++)
+            for(int j=0;j<cols1;j++)
+                matrix1[i][j] =Scanner.nextInt();
+            
+        
+        System.out.print("enter the matrix2:");
+        for(int i=0;i<cols1;i++)
+            for(int j=0;j<cols2;j++)
+                matrix2[i][j]=Scanner.nextInt();
+            
+        
+        for(int i=0;i<rows1;i++)
+            for(int j=0;j<cols2;j++)
+                for(int k=0;k<cols1;k++)
+                    result[i][j] += matrix1[i][k] * matrix2[k][j];
+                
+        for(int i=0;i<rows1;i++)
+            for(int j=0;j<cols2;j++){
+                System.out.print(result[i][j]+ " ");
+                System.out.println();
+            }
+    }
+        
+}
