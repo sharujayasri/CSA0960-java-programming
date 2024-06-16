@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class valid
+{
+    public static void main(String[]args)
+    {
+        
+        Scanner Scanner = new Scanner(System.in);
+        System.out.print("Enter the string:");
+        String s1 = Scanner.nextLine();
+        System.out.print("Re-Enter the string:");
+        String s2 = Scanner.nextLine();
+        if(s1.equals(s2)){
+        
+            System.out.println("The string is valid");}
+        
+        else{
+        
+            System.out.println("The string is not valid");}
+        
+    }
+}
+            
+        
+    
