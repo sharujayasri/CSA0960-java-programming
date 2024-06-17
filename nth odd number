@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class composite
+{
+    public static void  main(String[]args)
+    {
+        Scanner Scanner=new Scanner(System.in);
+     int n;
+     System.out.print("Enter the n value:");
+     n=Scanner.nextInt();
+     int a[]=new int[100];
+     int j=1;
+     for(int i=0;i<100;i++){
+         if(i%2!=0){
+             a[j]=i;
+             j++;
+         }
+     }
+             System.out.print(a[n*2]);
+         }
+     }
