@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class vowels
+{
+    public static void main(String[]args)
+    {
+        Scanner Scanner = new Scanner(System.in);
+        String name =Scanner.next();
+        int vowls=0;
+        int len=name.length();
+        for(int i=0;i<len;i++)
+        {
+            char a[]=name.charAt(i);
+            if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'||
+            a[i]=='A'||a[i]=='E'||a[i]=='I'||a[i]=='O'||a[i]=='U')
+            
+                vowls=vowls+1;
+            }
+        
+        System.out.print(vowls+ " ");
+       
+    }
+}
