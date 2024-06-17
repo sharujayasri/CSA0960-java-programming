@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class remove {
+    public static void main(String[]args)
+    {
+        Scanner Scanner =new Scanner(System.in);
+        System.out.print("Enter the String:");
+        String name=Scanner.nextLine();
+        String name1=name.replaceAll("[aeiouAEIOU]" , " ");
+        System.out.print(name1+ " ");
+    }
+}
