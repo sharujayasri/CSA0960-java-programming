@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class search
+{
+    public static void  main(String[]args)
+    {
+        Scanner Scanner=new Scanner(System.in);
+        System.out.print("Enter the String:");
+        String name=Scanner.nextLine();
+        System.out.print("Enter the String to be found:");
+        char c = Scanner.next().charAt(0);
+        int len=name.length();
+        boolean found=false;
+        for(int i=0;i<len;i++)
+        {
+            if(name.charAt(i)==c)
+            {
+                System.out.print("String is found:"+i);
+                found=true;
+                break;
+            }
+        }
+        if(!found){
+        
+            System.out.print("String is not found");}
+        }
+            }
+        
+     
+     
