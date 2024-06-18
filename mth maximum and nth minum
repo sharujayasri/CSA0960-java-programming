@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class primecomp
+{
+    public static void main(String[]args)
+    {
+       Scanner Scanner=new Scanner(System.in);
+        int arr[]={10,20,31,42,12,52};
+        int len=arr.length;
+        for(int i=0;i<len;i++)
+        {
+            for(int j=i+1;j<len;j++)
+            {
+                if(arr[i]==arr[j])
+                {
+                    int temp=arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                }
+            }
+        }
+        int m=1,n=3;
+        int max=arr[len-m];
+        int min=arr[n-1];
+        System.out.print("m maximum:"+max);
+        System.out.print("\n n minimum:"+min);
+        int sum=max+min;
+        int diff=max-min;
+        System.out.print("\n sum:"+sum);
+        System.out.print("\n difference:"+diff);
+    }
+}
