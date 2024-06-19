@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class conversion
+{
+    public static void main(String[]args)
+    {
+        Scanner Scanner= new Scanner(System.in);
+        System.out.print("Enter the number:");
+       String bin=Scanner.nextLine();
+    int decimal = Integer.parseInt(bin,2);
+        String  octal=Integer.toOctalString(decimal);
+        System.out.print("deciaml:"+decimal);
+        System.out.print("\noctal:"+octal);
+    }
+}
