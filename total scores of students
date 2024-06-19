@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class score
+{
+    public static void main(String[]args)
+    {
+        int maths=100;
+        int science=99;
+        int social=95;
+        int tamil=90;
+        int total=(maths+science+social+tamil);
+        float agg = total/4f;
+        if(agg>75)
+        System.out.print("Distiction");
+        else if(agg>=60 && agg<75)
+        System.out.print("First Deviation");
+        else if(agg>=50 && agg<60)
+        System.out.print("secound Deviation");
+        else if(agg>=40 && agg<50)
+        System.out.print("Third Deviation");
+        else
+        System.out.print("fail");
+    }
+}
