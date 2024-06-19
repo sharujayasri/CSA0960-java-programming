@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class nperfect
+{
+    public static void main(String[]args)
+    {
+        Scanner Scanner = new Scanner(System.in);
+        System.out.print("Enter the n value:");
+        int n=Scanner.nextInt();
+        int temp=0;
+        for(int j=2;j<1000;j++)
+        {
+            int sum=1;
+            for(int i=2;i<j;i++){
+            
+                if(j%i==0)
+                
+                    sum=sum+i;
+                }
+            
+            if(sum==j){
+                System.out.print(j+ " ");
+            
+            temp=temp+1;
+            
+        }
+    }
+}
+}
