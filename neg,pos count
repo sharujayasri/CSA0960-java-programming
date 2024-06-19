@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class maths
+{
+    public static void main(String[]args)
+    {
+        Scanner Scanner= new Scanner(System.in);
+        double possum=0,negsum=0;
+        int poscount=0,negcount=0;
+        System.out.print("Enter the n value:");
+        int num;
+        while((num=Scanner.nextInt())!=-1)
+        {
+        if(num>0)
+        {
+           possum+=num;
+            poscount++;
+        }
+        else if(num<0)
+        {
+            negsum+=num;
+            negcount++;
+        }
+        }
+    System.out.println("the sum of posstives :"+(poscount>0 ? possum/poscount:0));
+    System.out.println("the sum of negatives :"+(negcount>0 ? negsum/negcount:0));
+        
+    }
+}
