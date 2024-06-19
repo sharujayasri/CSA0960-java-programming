@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class palindrome
+{
+    public static void main(String[]args)
+    {
+        Scanner Scanner=new Scanner(System.in);
+        int dec=15;
+        String binary=Integer.toBinaryString(dec);
+        String octal=Integer.toOctalString(dec);
+        System.out.print(binary+ " ");
+        System.out.print(octal+ " ");
+    }
+    }
